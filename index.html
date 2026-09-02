@@ -253,8 +253,8 @@ to{transform:rotate(360deg) translateX(0)}}
 .epoch-node-conn.done{background:linear-gradient(90deg,var(--teal),var(--blue));}
 .epoch-progress-wrap{margin-bottom:16px;}
 .epoch-progress-top{display:flex;justify-content:space-between;font-size:8px;color:var(--text3);margin-bottom:5px;}
-.epoch-progress{height:5px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;}
-.epoch-progress-fill{height:100%;border-radius:3px;background:var(--brand-grad);transition:width .6s ease;}
+.epoch-progress{height:10px;background:rgba(255,255,255,0.12);border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.15);}
+.epoch-progress-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#FFFFFF 0%,#C8C8C8 50%,#F5F5F5 100%);box-shadow:0 0 12px rgba(255,255,255,0.55);transition:width .6s ease;}
 .epoch-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 .epoch-stat{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;}
 .epoch-stat-val{font-family:var(--mono);font-size:12.5px;font-weight:700;color:#fff;margin-bottom:3px;}
@@ -566,8 +566,8 @@ body.light-mode #bgCanvas{background:
     </div>
 
     <div class="epoch-progress-wrap">
-      <div class="epoch-progress-top" style="justify-content:flex-end;"><span id="epochPctLabel">—% complete</span></div>
-      <div class="epoch-progress"><div class="epoch-progress-fill" id="epochProgressFill" style="width:0%;"></div></div>
+      <div class="epoch-progress-top" style="justify-content:flex-end;"><span id="epochPctLabel">40% complete</span></div>
+      <div class="epoch-progress"><div class="epoch-progress-fill" id="epochProgressFill" style="width:40%;"></div></div>
     </div>
 
     <div class="epoch-stats">
